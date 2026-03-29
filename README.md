@@ -12,7 +12,7 @@ FeedBackControl was designed a bit differently than what the instructions sugges
 The lack of joint limit implementation within the main part of the project was a surprise as they play a significant part in a robot’s performance in real life situations. For certain new case situations where the block was placed at a different location, these joint limits were vital to move the robot without any issues, however it was not implemented in this submission due to additional complexities rising up as a result of attempting to implement that functionality. Velocity limits were implemented, with a higher angular velocity `(100 rad/s)` being permitted for the wheels compared to the arm `(25 rad/s)` because it reflected the more realistic gear ratios for the robot. Earlier in the project, the same angular velocity limit was applied to all joints, but this led to over-actuation of the arm and under-actuation of the chassis since the end effector could travel much farther for an angular velocity on the arm compared to an angular velocity on the chassis. A simple Jacobian singularity avoidance was implemented by introducing a threshold for which the Jacobian would perform calculations. Any values less than the threshold would be set to zero, which would assist in the computation efficiency of the Jacobian. 
 
 ## Code 
-Please check `[MAE204FinalCode.ipynb](./MAE204FinalCode.ipynb)` for the necessary functions and libraries needed to replicate this project. 
+Please check [MAE204FinalCode.ipynb](./MAE204FinalCode.ipynb) for the necessary functions and libraries needed to replicate this project. 
 
 ## Results 
  Please view the full report [here](./MAE204Project.pdf)
