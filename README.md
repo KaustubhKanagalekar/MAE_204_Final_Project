@@ -3,7 +3,7 @@
 ![Coppelia Sim Interface](./MAE204Project.png)
 
 
-## Summary of Project
+##Summary of Project
 
 This project was completed using a Jupyter Notebook in Python with the assistance of the Modern Robotics, Numpy, and Matplotlib libraries. There were three major functions that were designed to complete the project: TrajectoryGenerator, NextState, and FeedBackControl. The first function that was built was TrajectoryGenerator which took in inputs of various transformation matrices relating to the end effector configurations at each trajectory and outputted the corresponding cartesian trajectories. The second function that was built was the NextState function that took inputs of the current state, velocities, and magnitudes, outputting the next state of the robot based on odometry and elementary Euler steps. The third function that was built was FeedBackControl that took inputs of end effector current and next locations, proportional and integral matrices, and states and angles of the current state, outputting speeds for wheels and the arm, commanded twist, and error twist for plotting purposes. Finally, a wrapper script consisting of feedforward only, best feedback case, overshoot feedback case, and new task feedback case were tested, with their corresponding error twists plotted for analysis purposes. 
 
@@ -21,10 +21,8 @@ Please check `MAE204FinalCode.ipynb` for the necessary functions and libraries n
 - **Best Case Controller with `Kp = 1.0 and Ki = 0.008` :**  
    [![Best Case Controller](https://img.youtube.com/vi/lg1AVz0kbiA/0.jpg)](https://www.youtube.com/watch?v=lg1AVz0kbiA)  
 - **Overshoot Controller with `Kp = 2.0 and Ki = 6.0`**  
-   [![Overshoot Controller](https://img.youtube.com/vi/-rxJjsLgMGFE-c/0.jpg)](https://www.youtube.com/watch?v=rxJjsLgMGFE)  
+   [![Overshoot Controller](https://img.youtube.com/vi/rxJjsLgMGFE/0.jpg)](https://www.youtube.com/watch?v=rxJjsLgMGFE)  
 - **Well Tuned Alternate Configuration**  
-   [![Alternate Well](https://img.youtube.com/vi/_LAYB8AEKD0/0.jpg)](https://www.youtube.com/watch?v=_LAYB8AEKD0)  
-- **Alternate Configuration Overshoot**
-   [![Alternate Overshoot](https://img.youtube.com/vi/l_GbG-t8ROs/0.jpg)](https://www.youtube.com/watch?v=l_GbG-t8ROs)
-
-  
+   [![Alternate Well](https://img.youtube.com/vi/_LAYB8AEKD0/0.jpg)](https://www.youtube.com/watch?v=_LAYB8AEKD0) 
+- **Alternate Configuration Overshoot**  
+    [![Alternate Overshoot](https://img.youtube.com/vi/l_GbG-t8ROs/0.jpg)](https://www.youtube.com/watch?v=l_GbG-t8ROs)
